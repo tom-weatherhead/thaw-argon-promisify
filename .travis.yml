@@ -9,7 +9,7 @@ node_js:
   - 4.9.1
 branches:
   only:
-    - master
+    - main
 cache:
   directories:
     - node_modules
