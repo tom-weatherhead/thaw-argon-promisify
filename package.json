@@ -1,0 +1,89 @@
+{
+	"name": "thaw-argon-promisify",
+	"version": "0.0.0",
+	"description": "A TypeScript implementation of promisify() intended for Node.js lts/argon (version 4.9.1) and WINDOWS XP ONLY.",
+	"keywords": [
+		"Argon",
+		"Promise",
+		"TypeScript",
+		"Windows XP"
+	],
+	"private": false,
+	"homepage": "https://github.com/tom-weatherhead/argon-promisify#readme",
+	"repository": "github:tom-weatherhead/argon-promisify",
+	"bugs": {
+		"url": "https://github.com/tom-weatherhead/argon-promisify/issues"
+	},
+	"_browser": "",
+	"main": "dist/main.js",
+	"types": "dist/main.d.ts",
+	"files": [
+		"dist/**/*"
+	],
+	"bin": {},
+	"man": [],
+	"directories": {
+		"// lib": "lib",
+		"// bin": "It is an error to specify both bin and directories.bin",
+		"man": "man",
+		"// doc": "Put markdown files in the directories.doc directory",
+		"doc": "doc",
+		"example": "examples",
+		"test": "test"
+	},
+	"scripts": {
+		"all": "npm i && npm run prettier-format && npm run build-and-test && npm pack",
+		"re": "rm -rf dist && npm run prettier-format && npm run build-and-test && npm pack",
+		"rebuild-offline": "npm run clean-offline && npm run build-and-test",
+		"clean": "rm -rf dist && rm -rf node_modules",
+		"clean-offline": "rmdir /Q /S dist",
+		"build-and-test": "npm run prettier-check && npm run lint && npm run build && npm test",
+		"prettier-check": "prettier --check \"src/**/*.ts\" \"test/**/*.js\"",
+		"prettier-format": "prettier --write \"src/**/*.ts\" \"test/**/*.js\"",
+		"lint": "eslint src test",
+		"build": "tsc",
+		"test": "nodeunit test",
+		"loc": "git ls-files -z *.ts | xargs -0 wc -l"
+	},
+	"config": {
+		"deploy_target_dir": "$NPM_PKG_DIR"
+	},
+	"publishConfig": {},
+	"dependencies": {},
+	"devDependencies": {
+		"@types/node": "<5",
+		"eslint": "<5",
+		"nodeunit-x": "^0.14.0",
+		"prettier": "<2",
+		"typescript": "^4.3.2"
+	},
+	"peerDependencies": {},
+	"// bundledDependencies is an array of package names": true,
+	"// The name bundleDependencies is also honoured": true,
+	"bundledDependencies": [],
+	"optionalDependencies": {},
+	"engines": {
+		"node": "4.9.1"
+	},
+	"os": [
+		"darwin",
+		"linux",
+		"win32"
+	],
+	"cpu": [
+		"ia32",
+		"x64"
+	],
+	"author": "Tom Weatherhead <thaw@2hrd4u.org> (https://github.com/tom-weatherhead)",
+	"contributors": [
+		"Anonymous <conspirator@deep.state.gov>",
+		"Assimilated Captain <locutus@b.org>",
+		"Austin James <president@warehouse.serendip.com>",
+		"Autonomous Weapons Systems Unlimited <killer@robots.com>",
+		"Buddy Guy <deadbeef@decafbad.gov>",
+		"Deprecated <deadc0de@obso1337.org>",
+		"Loitering Munition <smart@bom.com>",
+		"Sgt. Pepper <shoot1st@thinkl8r.mil>"
+	],
+	"license": "MIT"
+}
