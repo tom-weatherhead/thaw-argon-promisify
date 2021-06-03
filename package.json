@@ -1,6 +1,6 @@
 {
 	"name": "thaw-argon-promisify",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"description": "A TypeScript implementation of promisify() intended for Node.js lts/argon (version 4.9.1) and WINDOWS XP ONLY.",
 	"keywords": [
 		"Argon",
@@ -9,10 +9,10 @@
 		"Windows XP"
 	],
 	"private": false,
-	"homepage": "https://github.com/tom-weatherhead/argon-promisify#readme",
-	"repository": "github:tom-weatherhead/argon-promisify",
+	"homepage": "https://github.com/tom-weatherhead/thaw-argon-promisify#readme",
+	"repository": "github:tom-weatherhead/thaw-argon-promisify",
 	"bugs": {
-		"url": "https://github.com/tom-weatherhead/argon-promisify/issues"
+		"url": "https://github.com/tom-weatherhead/thaw-argon-promisify/issues"
 	},
 	"_browser": "",
 	"main": "dist/main.js",
